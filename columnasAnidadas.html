@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>INTRODUCCIÓN A BOOTSTRAP</title>
+
+    <!-- ESTO ES EL CSS DE BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <!-- ESTO ES EL CSS DE BOOTSTRAP -->
+
+    <style>
+        .columna {
+            background: gray;
+            padding: 10px;
+            text-align: center;
+            border: 1px solid;
+        }
+        .row
+        {
+            margin-top: 20px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="row">
+
+            <div class="columna col-12 col-md-6">
+                COL #1
+                
+                <div class="row"> 
+                    <div class="columna col-12 col-md-3"> subCol #1</div>
+                    <div class="columna col-12 col-md-3"> subCol #2</div>
+                    <div class="columna col-12 col-md-3"> subCol #3</div>
+                    <div class="columna col-12 col-md-3"> subCol #4</div>
+                </div>
+                
+            </div>
+
+
+            <div class="columna col-12 col-md-6">
+                COL #2
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <!-- ESTO ES EL JS DE BOOTSTRAP -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+    <!-- ESTO ES EL CSS DE BOOTSTRAP -->
+
+</body>
+
+</html>
