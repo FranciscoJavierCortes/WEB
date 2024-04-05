@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Image Examples</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Estilo para el contenedor con imagen de fondo */
+        .background-image-container {
+            background-image: url('https://via.placeholder.com/800x400');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 20px;
+            position: relative;
+            height: 400px;
+           
+        }
+
+        /* Estilo para el texto superpuesto en el contenedor con imagen de fondo */
+        .overlay-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            
+        }
+        
+
+        /* Estilo para las imágenes con marco */
+        .image-with-border {
+            border: 2px solid #007bff;
+            padding: 5px;
+            
+        }
+
+        .with-shadow {
+            box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.9);
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="container mt-5">
+        <!-- Imagen de fondo con texto superpuesto -->
+        <div class="background-image-container">
+            <div class="overlay-text">
+                <h1 style="font-family: Arial, sans-serif; font-size: 36px; color: #ff0000;">Título Principal</h1>
+                <p style="font-family: 'Times New Roman', serif; font-size: 18px; color: #ffffff;">Texto sobre la imagen de fondo</p>
+                <div class="row">
+                    <div class="col-md-6">
+                        <p style="font-family: Verdana, Geneva, sans-serif; font-size: 16px; color: #ffff00;">Columna 1</p>
+                        <p style="font-family: Arial, sans-serif; font-size: 14px; color: #00ff00;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec nunc nec nunc.</p>
+                    </div>
+                    <div class="col-md-6">
+                        <p style="font-family: Verdana, Geneva, sans-serif; font-size: 16px; color: #ffff00;">Columna 2</p>
+                        <p style="font-family: Arial, sans-serif; font-size: 14px; color: #00ff00;">Sed euismod vestibulum arcu, id commodo neque ullamcorper vel.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Imágenes con diferentes estilos y marcos -->
+        <div class="row mt-4">
+            <div class="col-md-4 mb-4 text-center">
+                <h2 style="font-family: 'Arial Black', Gadget, sans-serif; color: #ff0000;">Título Encima</h2>
+                <p style="font-family: 'Courier New', Courier, monospace; text-align: center;">Texto encima de la imagen</p>
+                <img src="https://via.placeholder.com/300" class="img-fluid image-with-border" alt="Imagen con borde">
+            </div>
+            <div class="col-md-4 mb-4 text-center">
+                <img src="https://via.placeholder.com/300" class="img-thumbnail" alt="Imagen con borde redondeado">
+                <h2 style="font-family: 'Arial Black', Gadget, sans-serif; color: #00ff00;">Título Abajo</h2>
+                <p style="font-family: 'Courier New', Courier, monospace; text-align: center;">Texto debajo de la imagen</p>
+            </div>
+            <div class="col-md-4 mb-4 text-center">
+                <h2 style="font-family: 'Arial Black', Gadget, sans-serif; color: #0000ff;">Título Encima</h2>
+                <p style="font-family: 'Courier New', Courier, monospace; text-align: center;">Texto encima de la imagen</p>
+                <img src="https://via.placeholder.com/300" class="img-fluid rounded-circle" alt="Imagen circular">
+            </div>
+        </div>
+      
+        <!-- Imágenes con diferentes tamaños -->
+        <div class="row mt-4">
+            <div class="col-md-4 mb-4">
+                <img src="https://via.placeholder.com/200" class="img-fluid" alt="Imagen pequeña">
+            </div>
+            <div class="col-md-4 mb-4">
+                <img src="https://via.placeholder.com/400" class="img-fluid" alt="Imagen grande">
+            </div>
+            <div class="col-md-4 mb-4">
+                <img src="https://via.placeholder.com/800" class="img-fluid" alt="Imagen extra grande">
+            </div>
+            <div class="col-md-4 mb-4">
+                <img src="https://via.placeholder.com/400" class="img-fluid with-shadow" alt="Imagen grande">
+            </div>
+            <div class="col-md-4 mb-4">
+                <img src="https://via.placeholder.com/400" class="img-fluid with-shadow" alt="Imagen grande">
+            </div>
+            <div class="col-md-4 mb-4">
+                <img src="https://via.placeholder.com/400" class="img-fluid with-shadow" alt="Imagen grande">
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS (opcional) -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
