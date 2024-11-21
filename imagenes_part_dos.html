@@ -44,6 +44,9 @@
             box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.9);
             /* X, Y, SUAVIDAD / R,G,B,ALPHA */
         }
+        .caja {
+                border: 1px solid black;
+            }
 
     </style>
 </head>
@@ -58,6 +61,17 @@
                 <p>Texto sobre la imagen de fondo</p>
             </div>
         </div>
+
+        <!-- Imagen de fondo directamente en bootstrap -->
+        <div class="row">
+                <div class="caja col-12 position-relative p-0">
+                    <img src="https://placehold.co/1200x700" class="img-fluid" alt="Imagen de fondo" />
+                    <div class="position-absolute top-50 start-50 translate-middle text-center text-white">
+                        <h1>Texto sobre la imagen</h1>
+                        <p>Este es un ejemplo de texto que se superpone a la imagen.</p>
+                    </div>
+                </div>
+            </div>
 
         <!-- Imágenes con diferentes estilos y marcos -->
         <div class="row mt-4">
